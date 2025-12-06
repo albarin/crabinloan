@@ -90,3 +90,49 @@ a.tag-link:hover {
 .post-content {
 	flex: 1;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+	body {
+		font-size: 1rem; /* Slightly smaller on mobile */
+		padding: 0 1rem; /* Add horizontal padding */
+	}
+	
+	html {
+		padding-bottom: 80px; /* More space for footer on mobile */
+	}
+	
+	footer {
+		font-size: 1rem; /* Smaller footer text on mobile */
+		padding: 8px 1rem;
+	}
+	
+	.post-item {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 1em;
+	}
+	
+	.post-date {
+		width: auto;
+		text-align: left;
+		font-size: 0.9em;
+		color: rgba(0, 0, 0, 0.6);
+		margin-bottom: 0.25em;
+	}
+	
+	.post-separator {
+		display: none; /* Hide the dash separator on mobile */
+	}
+	
+	.tags a.tag-link,
+	.post-content a.tag-link,
+	a.tag-link {
+		font-size: 0.85em;
+		margin-right: 0.5em;
+	}
+	
+	.post-content a.tag-link:first-child {
+		margin-left: 0; /* Remove left margin on mobile */
+	}
+}
