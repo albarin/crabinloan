@@ -1,3 +1,7 @@
+body {
+    font-size: 1.1em;
+}
+
 h1 {
     letter-spacing: -1px;
 }
@@ -7,9 +11,19 @@ h1 a, h1 a:visited {
     color: black;
 }
 
+html {
+    padding-bottom: 60px; /* Make room for the footer */
+}
+
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
-    margin-top: 2em;
+    padding: 5px 0;
+    font-size: 1.2em;
+    background: inherit;
 }
 
 .title {
@@ -22,4 +36,57 @@ footer {
 
 .toc li span {
     color: rgba(0, 0, 0, 0.5);
+}
+
+/* Blog post list styles */
+.tags a.tag-link,
+.post-content a.tag-link,
+a.tag-link {
+	color: #0052cc;
+	text-decoration: none;
+	margin-right: 0.6em;
+	font-size: 0.9em;
+	opacity: 1;
+	font-weight: 500;
+}
+.post-content a.tag-link:first-child {
+	margin-left: 0.75em;
+}
+.tags a.tag-link:hover,
+.post-content a.tag-link:hover,
+a.tag-link:hover {
+	color: #0052cc;
+	opacity: 1;
+	text-decoration: underline;
+}
+/* Bigger tags in individual blog posts */
+.tags a.tag-link {
+	font-size: 1.1em;
+	margin-right: 0.5em;
+}
+.post-list {
+	list-style: none;
+	padding: 0;
+}
+.post-item {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 0.5em;
+}
+.post-date {
+	width: 120px;
+	flex-shrink: 0;
+	text-align: right;
+}
+.post-separator {
+	margin: 0 0.75em;
+	color: rgba(0, 0, 0, 0.5);
+	flex-shrink: 0;
+}
+.post-tag-separator {
+	margin: 0 0.5em;
+	color: rgba(0, 0, 0, 0.5);
+}
+.post-content {
+	flex: 1;
 }

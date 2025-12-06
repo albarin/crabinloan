@@ -8,7 +8,7 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, tags } = Astro.props;
 ---
 
 <html lang="en">
@@ -16,15 +16,15 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 		<BaseHead title={title} description={description} />
 		<style>
 			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
+				width: 650px;
+				margin: 0 auto;
+				padding: 0;
 			}
-			.prose {
-				width: 720px;
+			article .prose {
+				width: 640px;
 				max-width: calc(100% - 2em);
 				margin: auto;
-				padding: 1em;
+				padding: 0;
 				color: rgb(var(--gray-dark));
 			}
 			.title {
@@ -35,13 +35,20 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
+				font-size: 1.8em;
 			}
 			.date {
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
+				font-size: 1em;
 			}
 			.last-updated-on {
 				font-style: italic;
+			}
+			.tags {
+				margin-bottom: 1em;
+				color: rgb(var(--gray));
+				font-size: 0.9em;
 			}
 		</style>
 	</head>
@@ -50,22 +57,31 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 		<Header />
 		<main>
 			<article>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
+				<div class="title">
+					<div class="date author">
+						<FormattedDate date={pubDate} />
+						{
+							updatedDate && (
+								<div class="last-updated-on">
+									Last updated on <FormattedDate date={updatedDate} />
+								</div>
+							)
+						}
 					</div>
-					<slot />
+					<h1>{title}</h1>
+					{
+						tags && tags.length > 0 && (
+							<div class="tags">
+								{tags.map(tag => (
+									<a href={`/tags/${tag}`} class="tag-link">#{tag}</a>
+								))}
+							</div>
+						)
+					}
+				</div>
+				<slot />
+				<div style="margin-top: 2em; padding-top: 1em; border-top: 1px solid rgb(var(--gray-light));">
+					<p><a href="/">← Back to home</a></p>
 				</div>
 			</article>
 		</main>

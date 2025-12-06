@@ -1,0 +1,10 @@
+---
+title: 'Choosing My First 3D Printer'
+description: 'After researching different models and brands, I decided on the Bambu Lab P1S Combo'
+pubDate: 'Nov 28 2025'
+tags: ['3dprinting']
+---
+
+I spent the week watching lots of videos, researching different models of printers, brands, filaments, etc. It was a bit overwhelming, but after a lot of thinking and back-and-forth between differents options I decided to go for the [Bambu Lab P1S Combo](https://eu.store.bambulab.com/products/p1s). I got a good offer since it was Black Friday, we'll see if it was worth it or it was too much for a complete beginner like me. 
+
+I seriously considered getting a Bambu Lab A1 instead, but in the end the enclosure and possibility to print with more advanced materials in the future convinced me to go for the P1S 🤷‍♀️

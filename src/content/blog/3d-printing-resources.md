@@ -1,0 +1,7 @@
+---
+title: 'Interesting links to explore'
+pubDate: 'Nov 30 2025'
+tags: ['3dprinting', 'resources']
+---
+
+- [µcad programming language](https://microcad.xyz/)
