@@ -11,7 +11,7 @@ export default defineConfig({
 	integrations: [mdx(), sitemap(), umami(
 		{
 			id: 'e1d13fe7-365c-4004-b028-c20c882ec651',
-			hostUrl: 'https://umami-rouge-five.vercel.app',
+			endpointUrl: 'https://umami-rouge-five.vercel.app',
 			domains: ['crabinloan.com', 'www.crabinloan.com'],
 		}
 	)],
