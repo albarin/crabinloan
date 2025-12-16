@@ -10,7 +10,7 @@ export default defineConfig({
 	site: 'https://albarin.github.io',
 	integrations: [mdx(), sitemap(), umami(
 		{
-			id: 'deeb9f1a-60c4-46fb-ba2d-a0473a6e0347',
+			id: 'e1d13fe7-365c-4004-b028-c20c882ec651',
 			domains: ['crabinloan.com', 'www.crabinloan.com'],
 		}
 	)],
