@@ -1,0 +1,49 @@
+---
+title: 'First useful prints'
+pubDate: 'Dec 16 2025'
+tags: ['3dprinting']
+---
+import { Image } from 'astro:assets';
+
+
+I have a list of a few useful prints that I have been planning to make since I bought the P1S printer.
+For now, all my "projects" are simple: I usually browse models on [MakerWorld](https://makerworld.com), download them, and print them as they are, without modifications.
+
+
+These are some of the prints I want to make in the next few days:
+- Sewer cover
+- Under-desk drawer
+- White door hooks
+- Soap dispenser for the kitchen
+- Gridfinity organizers for the bathroom drawers
+- Egg holder for the fridge
+- Kobo eReader case
+
+
+I started with the door hooks, since I figured they would be an easy win. I found this 
+[35mm Over Door Hook / Hanger](https://makerworld.com/en/models/196347-35mm-over-door-hook-hanger?from=search#profileId-216967) 
+model, which looked perfect for my door. It printed great and fit perfectly, but the hook part that holds onto the door is a bit too short,
+so whenever I took some clothes from it, the whole hook would come off the door. I wanted to modify the model to make that part longer, but I
+failed miserably, as I don't have any experience with 3D modeling yet.
+
+<Image width="300" height="300" src="/images/blog/first-hook.png" alt="First door hook" />
+
+
+After browsing a bit more, I found this [Simple Door Hook Generator](https://makerworld.com/en/models/493470-simple-door-hook-generator-openscad-customizable#profileId-407205),
+which was exactly what I needed, as it allows you to customize the dimensions of every single part of the hook to your needs.
+I generated a new model with a longer hook part and printed it, and this time it holds much better!
+
+<Image width="300" height="300" src="/images/blog/second-hook.png" alt="First door hook" />
+
+
+I had to increase the width by 1mm for it to be a perfect fit for my door, but other than that, it was perfect.
+Once I made sure the dimensions were correct, I used the clone tool in Bambu Studio to create 7 more copies of the model in the same print job, so I could print all the hooks I needed at once.
+It's great that the cloning feature is able to automatically arrange the models on the print bed for you 👌
+
+
+I'm satisfied with how they look on the door, and I can always print more if I need to expand my hanging capacity!
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
+  <Image width="300" height="300" src="/images/blog/cloned-hooks.png" alt="Cloned door hooks in Bambu Studio" style="flex: 1; min-width: 250px; max-width: 100%; height: auto;" />
+  <Image width="300" height="300" src="/images/blog/door-hooks.png" alt="Door hooks installed" style="flex: 1; min-width: 250px; max-width: 100%; height: auto;" />
+</div>
