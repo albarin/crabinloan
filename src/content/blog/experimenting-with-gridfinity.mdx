@@ -1,0 +1,45 @@
+---
+title: 'Experimenting with Gridfinity'
+pubDate: 'Dec 18 2025'
+tags: ['3dprinting']
+---
+import { Image } from 'astro:assets';
+
+Today I started with another one of the prints from my list: Gridfinity organizers for my bathroom drawers.
+
+I've watched a few videos about the Gridfinity system and I wanted to give it a try.
+The idea is to have a modular system of containers and organizers that fit into a grid base, so you can customize your storage as needed.
+There's a huge amount of models and resources available online, so it's easy to find something that fits your needs.
+Gridfinity is probably on the most popular 3D printing systems out there! 😁
+
+I used a couple of generators:
+
+#### [Baseplate Generator](https://gridfinity.perplexinglabs.com/pr/gridplates/0/0)
+
+For the grid plates, I used [this generator](https://gridfinity.perplexinglabs.com/pr/gridplates/0/0), which allows you to customize almost every parameter you can think for the grid plates and download the STL files.
+You can also set the size of your printer bed, and it will split the whole grid into multiple pieces that can be assembled together later, so all of them fit into your printer.
+In my case, I needed a grid plate of 391mm x 291mm to fit my drawer, so I set those dimensions and the generator created 4 pieces for me to print.
+
+<Image width="600" height="600" src="/images/blog/gridfinity-base-3d.png" alt="Cloned door hooks in Bambu Studio" style="flex: 1; min-width: 250px; max-width: 100%; height: auto;" />
+
+I decided to print the grid in blue with the idea of then printing the boxes in white with a thin blue rim to match the base and make it look nicer.
+
+#### [Box Generator](https://gridfinitygenerator.com)
+
+For the first box, I used [this other generator](https://gridfinitygenerator.com). I wanted a simple 2x3 pretty standard box to start with.
+I just removed the lip because I didn't want it to be stackable, and added a thin wall inside as a separator to create two compartments.
+
+<Image width="600" height="600" src="/images/blog/gridfinity-box-3d.png" alt="Cloned door hooks in Bambu Studio" style="flex: 1; min-width: 250px; max-width: 100%; height: auto;" />
+
+And drum roll...  🥁 here are the results after printing and assembling everything! 
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
+  <Image width="300" height="300" src="/images/blog/grid-base.png" alt="Grid base" style="flex: 1; min-width: 250px; max-width: 100%; height: 300px; margin-bottom: 0;" />
+  <Image width="300" height="300" src="/images/blog/grid-box.png" alt="Grid box" style="flex: 1; min-width: 250px; max-width: 100%; height: 300px; margin-bottom: 0;" />
+  <Image width="300" height="300" src="/images/blog/grid-all-1.png" alt="Grid base and box" style="flex: 1; min-width: 250px; max-width: 100%; height: 300px; margin-top: 0;" />
+  <Image width="300" height="300" src="/images/blog/grid-all-2.png" alt="Grid base and box with stored items" style="flex: 1; min-width: 250px; max-width: 100%; height: 300px; margin-top: 0;" />
+</div>
+
+I'm pretty satisfied with how everything turned out! I really like the blue accent color on the white box 👌 
+
+I'll write a small how-to article about how I added the blue rim to the box in Bambu Studio soon, it was pretty straightforward but it took some investigation to figure it out.
