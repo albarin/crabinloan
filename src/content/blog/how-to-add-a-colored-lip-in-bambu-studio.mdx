@@ -1,0 +1,28 @@
+---
+title: 'How to add a colored lip in Bambu Studio'
+pubDate: 'Dec 20 2025'
+tags: ['3dprinting', 'howto']
+---
+import { Image } from 'astro:assets';
+
+
+When I printed my first Gridfinity box, I wanted to add a thin colored lip as an accent to match the baseplate. At first, I tried to find a model that already included the lip, but I couldn’t find one that fit my needs. So, I decided to figure out how to do it myself in Bambu Studio. It’s actually pretty straightforward!
+
+
+1. Open or import your model in Bambu Studio.
+2. Make sure your project has more than one filament loaded (for example, white and blue). You can add a new filament by clicking the `+` (`Add one filament`) icon in the `Project Filaments` sidebar on the left. This step is important, otherwise, you won’t be able to assign different filaments to different parts of the model.
+<a href="/images/blog/how-to-lip-step-2.png" target="_blank" rel="noopener noreferrer">
+    <Image width="600" height="600" src="/images/blog/how-to-lip-step-2.png" alt="Step 2: Add new filament in Bambu Studio" style="flex: 1; min-width: 250px; max-width: 100%; height: auto;" />
+</a>
+3. Click `Preview` in the top menu, then `Slice plate` to generate the sliced model.
+4. On the right side, you’ll see a bar with a `+` icon that you can drag up and down to select different layers of the model. Move it to the height where you want the colored lip to start.
+5. Right-click the `+` icon, select `Change Filament`, and choose the filament you want to use for the lip (blue, in this example).
+<a href="/images/blog/how-to-lip-step-4.png" target="_blank" rel="noopener noreferrer">
+    <Image width="600" height="600" src="/images/blog/how-to-lip-step-4.png" alt="Step 4: Select filament for the colored lip in Bambu Studio" style="flex: 1; min-width: 250px; max-width: 100%; height: auto;" />
+</a>
+6. Click `Slice plate` again to update the sliced model with the new filament assignment.
+7. You should now see the lip in the new color in the preview!
+8. Check the `Slicing Result` section to make sure both filaments are listed and the number of filament changes looks correct.
+<a href="/images/blog/how-to-lip-step-8.png" target="_blank" rel="noopener noreferrer">
+    <Image width="600" height="600" src="/images/blog/how-to-lip-step-8.png" alt="Step 8: Check slicing result in Bambu Studio" style="flex: 1; min-width: 250px; max-width: 100%; height: auto;" />
+</a>
